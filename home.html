@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home</title>
+	<!----Custom css link---->
+	<link rel="stylesheet" href="style.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+  	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+<section class="sec">
+<div class="circle"></div>
+<!----header---->
+<header>
+	<a href="#" class="logo"><img src="img/logo.png"></a>
+<ul>
+	<li><a href="home.html">Home</a></li>
+    <li><a href="menu.html">Menu</a></li>
+	<li><a href="addtocart.html">Order</a></b>
+	<li><a href="contact.html">Contact</a></li>
+</ul>
+</header>
+	<!----content---->
+	<div class="content">
+	<div class="textBox">
+	<h2>Pocari JKT48<br><span>Collaboration</span></h2>
+	<br>
+	<p>"Collectable Pocari x Jkt48 can edition can be order from 01 November until 10 December. Limited item GRAB NOW DON'T MISS IT !!!".</p>
+		<a href="addtocart.html">Order now</a>
+	</div>
+		<div class="imgBox">
+			<img src="img1.png" class="img">
+		</div>
+	</div>
+	<ul class="thumb">
+	<li><img src="img1.png" onclick="imgSlider('img1.png');changeCircleColor('#245ab5')"></li></li>
+	<li><img src="img2.png" onclick="imgSlider('img2.png');changeCircleColor('#e36588')"></li></li>
+	<li><img src="img7a.png" onclick="imgSlider('img7a.png');changeCircleColor('#F3CB19')"></li></li>
+	</ul>
+	<ul class="sci">
+		<li><a href="https://web.facebook.com/pocarisweatindonesia/?_rdc=1&_rdr"><img src="Y:\landing page\punya gweh\punya gweh\img/facebook.png"></a></li>
+		<li><a href="https://twitter.com/officialJKT48"><img src="Y:\landing page\punya gweh\punya gweh\img/twitter.png"></a></li>
+		<li><a href="https://www.instagram.com/pocarisportid/"><img src="Y:\landing page\punya gweh\punya gweh\img/instagram.png"></a></li>
+	</ul>
+</section>
+<script type="text/javascript">
+	function imgSlider(anything) {
+		document.querySelector('.img').src = anything;
+	}
+	function changeCircleColor(color){
+		const circle = document.querySelector('.circle');
+		circle.style.background = color;
+	}
+	
+</script>
+<div class="author">
+	<p>© 2023 by STRGN </p>
+</div>
+
+<!----custom js link--->
+<script src="js/script.js"></script>
+</body>
+</html>
